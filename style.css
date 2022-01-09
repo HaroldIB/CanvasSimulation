@@ -1,0 +1,9 @@
+body{
+    background: gray;
+}
+
+.lienzo{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
