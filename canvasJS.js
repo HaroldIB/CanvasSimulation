@@ -1,5 +1,7 @@
+//Agregamos un oyente al evento, que ocurre cuando termina de cargar la pagina
+//eventWindowLoaded llamará la función canvasApp cuando ocurra el evento
 window.addEventListener("load", eventWindowLoaded, false);	
-
+        //Utilizamos un debugger para el  console.log
         var Debugger = function () { };
         Debugger.log = function (message) {
             try {
@@ -8,15 +10,15 @@ window.addEventListener("load", eventWindowLoaded, false);
                 return;
             }
         }
-
+        //Evento que se ejecuta cuando carga la pagina web
         function eventWindowLoaded () {
             canvasApp();
         }
-
+        //Prueba si existe un contexto para crear el linezo para evitr errores.
         function canvasSupport () {
             return Modernizr.canvas;
         }
-
+        //Función para ejecutar
         function canvasApp () {
                 if (!canvasSupport()) {
                     return;
@@ -48,4 +50,4 @@ window.addEventListener("load", eventWindowLoaded, false);
                 }
                 
                 drawScreen();
-        }
+            } 
