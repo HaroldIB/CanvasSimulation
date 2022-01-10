@@ -118,9 +118,7 @@ function canvasApp() {
 	}
 	
 	function createImageDataPressed(e) {
-		
-		window.open(theCanvas.toDataURL(),"canavsImage","left=0,top=0,width=" + theCanvas.width + ",height=" + theCanvas.height +",toolbar=0,resizable=0");
-		
+		window.open(theCanvas.toDataURL(),"canvasImage","left=0,top=0,width=" + theCanvas.width + ",height=" + theCanvas.height +",toolbar=0,resizable=0");
 	}
 		
 }
